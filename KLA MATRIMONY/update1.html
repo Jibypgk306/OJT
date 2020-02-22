@@ -1,0 +1,243 @@
+<head>
+    <script type="text/javascript">
+        var sT = new Date();
+        var SS = sT.getSeconds();
+        var SST = sT.getTime();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://imgs.keralamatrimony.com/bmimages/faviconnew.ico" />
+    <link rel="icon" type="image/ico" href="https://imgs.keralamatrimony.com/bmimages/faviconnew.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li a {
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a.active {
+            background-color: lightblue;
+            color: green;
+        }
+        
+        body1 {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .div1 {
+            background-color: gainsboro;
+            border-radius: 6px;
+            ;
+            padding-left: 10px;
+            padding-bottom: 30px;
+            padding-right: 10px;
+        }
+        
+        #a {
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        #b {
+            background-color: grey;
+            color: white;
+            border-radius: 60px;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 46px;
+            height: 17px;
+        }
+        
+        .switch input {
+            opacity: 8;
+            width: 2;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 2;
+            left: 2;
+            right: 2;
+            bottom: 2;
+            background-color: blue;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 4px;
+            bottom: -1px;
+            background-color: green;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        input:checked+.slider {
+            background-color: crimson;
+        }
+        
+        input:focus+.slider {
+            box-shadow: 0 0 1px blue;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        
+        .slider.round {
+            border-radius: 30px;
+        }
+        
+        .slider.round:before {
+            border-radius: 100%;
+        }
+        
+        #chk {
+            float: right;
+            padding-left: 1px;
+        }
+        
+        #chk1 {
+            float: right;
+        }
+    </style>
+</head>
+<div class="a">
+</div>
+</div>
+</div>
+<div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+    <div class="div">
+        <h5><a href="test.html"><span class="glyphicon glyphicon-chevron-left"></span></a>E-mail
+            <hr>
+            <h5>Member Activity</h3>
+                <a href="" style="text-decoration: none;">
+                    <p>
+                        <font color="black">
+                            If you turn these off, you won't get any mails about member activity on your profile
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <br><br><b>Phone Number Views</b>
+                            <br>When members view your number</font><label class="switch" id="chk">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                  </label>
+                    </p>
+
+                    <hr>
+                    <font color="black"> <b>Requests</b><br> When members request for your information</font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+                    <font color="black"><b> Shortlists</b><br> When members shortlist you</font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+                    <a href="#" onclick="morealerts();">
+                        <font color="orange">More Alerts</font>
+                    </a><br><br><br><br>
+                    <font color="black"><b>Member Response</b><br> If you turn these off, you will not know when members respond to you</font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+                    <font color="black"><b>Accepts</b><br> When members accept your interests or requests</font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+                    <font color="black"><b> Declines</b><br> When members decline your interests or requests
+                    </font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+                    <br><br>
+                    <font color="black"><b>  Matches</b><br> If you turn these off, you might miss out on our recommendations based on your preferences
+                    </font><br><br><br>
+                    <font color="black"><b> Horoscope Matches </b><br><br>Weekly
+                    </font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+                    <font color="black"><b> Premium Matches </b><br><br>Everyday
+                    </font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+                    <font color="black"><b>  Matches with new photo </b><br><br>Weekly
+                    </font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+                    <font color="black"><b>                  
+                    New Matches
+                </b><br><br> Everyday
+                    </font>
+                    <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                    <hr>
+    </div>
+</div>
+<div class="col-md-1 col-xs-1 col-lg-1 col-sm-1">
+    <div class="div1" id="div1">
+    </div>
+</div>
+</div>
+</div>
+<script>
+    function morealerts() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("div1").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "more_alerts.html", true);
+        xhttp.send();
+    }
+</script>
+
+</html>

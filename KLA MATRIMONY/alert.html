@@ -1,0 +1,120 @@
+<html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="header.html" rel="import" />
+
+<script src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+    }
+    
+    li a {
+        display: block;
+        color: blue;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    
+    li a.active {
+        background-color: lightblue;
+        color: black;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .div1 {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #a {
+        background-color: orange;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    #b {
+        background-color: grey;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    body {
+        background-color: whitesmoke;
+    }
+    
+    hr {
+        border-top: 1px dashed lightgray;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="col-md-10 col-xs-10 col-lg-10 col-sm-10">
+            <div class="div">
+                <h5>Alerts & Updates
+                    <hr>
+                    <h5>E-Mail</h3>
+                        <a href="#" style="text-decoration: none;" onclick="loademailupdate();">
+                            <font color="black">
+                                Choose what updates you recive on your email
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </font>
+                            <hr height="2px">
+                        </a>
+                        <h5>SMS</h5>
+                        <a href="#" style="text-decoration: none;" onclick="loadsmsupdate();">
+                            <p>
+                                <font color="black">Choose what updates you get vis SMS
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </font>
+                            </p>
+                        </a>
+                        <hr>
+            </div>
+        </div>
+        <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1">
+
+        </div>
+    </div>
+    <script>
+        function loademailupdate() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("div1").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "update1.html", true);
+            xhttp.send();
+        }
+
+        function loadsmsupdate() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("div1").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "update2.html", true);
+            xhttp.send();
+        }
+    </script>
+
+</html>

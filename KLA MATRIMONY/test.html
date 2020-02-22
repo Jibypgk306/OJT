@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+            $("#header").load("headerr.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <!--Remaining section-->
+    <div id="footer"></div>
+</body>
+
+</html>
+<html>
+
+<body>
+    <div id="demo">
+        <script type="text/javascript">
+            var sT = new Date();
+            var SS = sT.getSeconds();
+            var SST = sT.getTime();
+        </script>
+        <link rel="shortcut icon" type="image/x-icon" href="https://imgs.keralamatrimony.com/bmimages/faviconnew.ico" />
+        <link rel="icon" type="image/ico" href="https://imgs.keralamatrimony.com/bmimages/faviconnew.ico" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                border: 2px solid grey;
+            }
+            
+            li a {
+                display: block;
+                color: blue;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            
+            li a.active {
+                background-color: lightblue;
+                color: black;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .div1 {
+                background-color: white;
+            }
+            
+            #a {
+                background-color: orange;
+                color: white;
+                border-radius: 5px;
+            }
+            
+            #b {
+                background-color: grey;
+                color: white;
+                border-radius: 10px;
+            }
+            
+            body {
+                background-color: whitesmoke;
+            }
+        </style>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-3 col-lg-3 col-sm-3">
+                    <h2>
+                        <font size="5px">Profile Settings</font>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-2 col-lg-2 col-sm-2">
+
+                    <ul>
+                        <li><a href="#" onclick="loadDoc();">Edit email adress</a></li>
+                        <li><a href="#news">change password</a></li>
+                        <li><a href="#" onclick="loadalert();">Alerts and Updates</a></li>
+                        <li><a href="#about">Call preferance</a></li>
+                        <li><a href="#about">Privacy</a></li>
+                        <li><a href="#about">Profile Settings</a></li>
+                        <li><a href="#about">Deactivate Profile</a></li>
+                        <li><a href="#about">Delete Profile</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+                    <div class="div1" id="div1">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("div1").innerHTML =
+                            this.responseText;
+                    }
+                };
+                xhttp.open("GET", "editemail.html", true);
+                xhttp.send();
+            }
+
+            function loadalert() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("div1").innerHTML =
+                            this.responseText;
+                    }
+                };
+                xhttp.open("GET", "alert.html", true);
+                xhttp.send();
+            }
+
+            function loademailupdate() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("div1").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "update1.html", true);
+                xhttp.send();
+            }
+
+            function loadsmsupdate() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("div1").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "update2.html", true);
+                xhttp.send();
+            }
+
+            function morealerts() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("div1").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "more_alerts.html", true);
+                xhttp.send();
+            }
+        </script>
+</body>
+
+</html>

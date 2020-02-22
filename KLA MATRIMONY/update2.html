@@ -1,0 +1,166 @@
+<head>
+    <script type="text/javascript">
+        var sT = new Date();
+        var SS = sT.getSeconds();
+        var SST = sT.getTime();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://imgs.keralamatrimony.com/bmimages/faviconnew.ico" />
+    <link rel="icon" type="image/ico" href="https://imgs.keralamatrimony.com/bmimages/faviconnew.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li a {
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a.active {
+            background-color: lightblue;
+            color: black;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #a {
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        #b {
+            background-color: grey;
+            color: white;
+            border-radius: 60px;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 46px;
+            height: 17px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 2;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 2;
+            left: 2;
+            right: 2;
+            bottom: 2;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 4px;
+            bottom: -1px;
+            background-color: #3CB371;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        input:checked+.slider {
+            background-color: #90EE90;
+        }
+        
+        input:focus+.slider {
+            box-shadow: 0 0 1px #90EE90;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        
+        .slider.round {
+            border-radius: 30px;
+        }
+        
+        .slider.round:before {
+            border-radius: 100%;
+        }
+        
+        #chk {
+            float: right;
+            padding-left: 1px;
+        }
+        
+        #chk1 {
+            float: right;
+        }
+    </style>
+</head>
+<div class="a">
+</div>
+</div>
+</div>
+<div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+    <div class="div1">
+        <h5>SMS
+            <hr>
+            <h5>Member Activity</h3>
+                <p>
+                    <font color="black">
+                        Member Activity If you turn these off, you won't get any SMS about member activity on your profile
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <br><br><b>Phone Number Views</b>
+                        <br>When members view your number</font><label class="switch" id="chk">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                  </label>
+                </p>
+                <hr height="2px">
+
+                <p><b>Express Interest</b><br> When members send an interest
+                    <font color="black">Choose what updates you get vis SMS
+                    </font><label class="switch" id="chk1">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                  </label>
+                </p>
+                </a>
+                <hr>
+                <font color="black"> <b>Personalized Messages
+                   </b><br> When premium members send messages</font>
+                <label class="switch" id="chk1">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+
+    </div>
+</div>
+<div class="col-md-1 col-xs-1 col-lg-1 col-sm-1">
+</div>
+</div>
+</div>
+
+</html>

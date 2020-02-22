@@ -1,0 +1,147 @@
+<head>
+    <script type="text/javascript">
+        var sT = new Date();
+        var SS = sT.getSeconds();
+        var SST = sT.getTime();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://imgs.keralamatrimony.com/bmimages/faviconnew.ico" />
+    <link rel="icon" type="image/ico" href="https://imgs.keralamatrimony.com/bmimages/faviconnew.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li a {
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a.active {
+            background-color: lightblue;
+            color: black;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #a {
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        #b {
+            background-color: grey;
+            color: white;
+            border-radius: 60px;
+        }
+        
+        #c1 {
+            float: right;
+        }
+        
+        #c2 {
+            float: right;
+        }
+        
+        #btn1 {
+            background-color: orangered;
+            float: right;
+        }
+        
+        #show {
+            float: right;
+        }
+        
+        #c3 {
+            float: right;
+        }
+        
+        #btn2 {
+            background-color: orangered;
+            float: right;
+        }
+        
+        #show1 {
+            float: right;
+        }
+        
+        .div1 {
+            font-size: 1px;
+        }
+    </style>
+</head>
+<div class="a">
+</div>
+</div>
+</div>
+<div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+    <div class="div1">
+        <font size="1px">
+            <h5>More E-Mail Alerts
+                <hr> Choose how often you receive mails about any member's activity on your profile
+                <br>
+                <b>Express Interest</b><br> When members send an interest<br><br>
+                <font color="black">Get notified instantly
+                    <input type="radio" name="radio" id="show">
+                    <br><br>
+                    <hr>
+                    <font color="black"> <b>Personalized Messages
+                   </b><br> When premium members send messages</font>
+                    <font color="green"><input type="radio" name="radio" id="c2">
+                    </font><br><br>
+                    <button id="btn1">Submit</button>
+                    <hr>
+
+                    <b>Express Interest</b><br> When members send an interest<br><br>
+                    <font color="black">Get notified instantly
+                        <input type="radio" name="radio" id="show1">
+                        <br><br>
+                        <hr>
+                        <font color="black"> <b>Personalized Messages
+                       </b><br> When premium members send messages</font>
+                        <font color="green"><input type="radio" name="radio" id="c3">
+                        </font><br><br>
+                        <button id="btn2">Submit</button>
+                    </font>
+                    <script>
+                        $(document).ready(function() {
+                            $("#btn1").hide();
+                            $("#show").click(function() {
+                                $("#btn1").show();
+                            });
+
+                        });
+                    </script>
+                    <script>
+                        $(document).ready(function() {
+                            $("#btn2").hide();
+                            $("#show1").click(function() {
+                                $("#btn2").show();
+                            });
+
+                        });
+                    </script>
+    </div>
+</div>
+<div class="col-md-1 col-xs-1 col-lg-1 col-sm-1">
+</div>
+</div>
+</div>
+
+
+</html>
